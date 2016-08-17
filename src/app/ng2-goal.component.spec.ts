@@ -1,13 +1,10 @@
 import {
-  beforeEachProviders,
-  describe,
-  expect,
-  it,
+  addProviders,
   inject
 } from '@angular/core/testing';
 import { Ng2GoalAppComponent } from '../app/ng2-goal.component';
 
-beforeEachProviders(() => [Ng2GoalAppComponent]);
+beforeEach(() => [Ng2GoalAppComponent]);
 
 describe('App: Ng2Goal', () => {
   it('should create the app',

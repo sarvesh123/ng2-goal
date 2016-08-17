@@ -1,9 +1,5 @@
-import { bootstrap } from '@angular/platform-browser-dynamic';
-import { enableProdMode } from '@angular/core';
-import { Ng2GoalAppComponent, environment } from './app/';
+import { browserDynamicPlatform } from '@angular/platform-browser-dynamic';
 
-if (environment.production) {
-  enableProdMode();
-}
+import { AppModule } from './app.module';
 
-bootstrap(Ng2GoalAppComponent);
+browserDynamicPlatform().bootstrapModule(AppModule);
